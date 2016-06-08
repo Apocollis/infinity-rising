@@ -1,6 +1,8 @@
 package com.github.apocollis.infinityrising;
 
 import com.github.apocollis.infinityrising.help.Reference;
+import com.github.apocollis.infinityrising.init.ModBlocks;
+import com.github.apocollis.infinityrising.init.ModItems;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
@@ -9,13 +11,13 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class InfinityRising 
 {
-
 	@Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-
+		ModItems.init();
+		ModBlocks.init();
     }
-
+	
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
@@ -27,5 +29,4 @@ public class InfinityRising
     {
 
     }
-
 }
