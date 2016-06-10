@@ -1,6 +1,6 @@
 item.boneIngot.name=Bone Ingot
-item.golenCoin.name=Golden Imperial
-tile.infinityOre.name=�4I�6n�ef�2i�1n�5i�4t�6y �eO�2r�1e�r
+item.goldenCoin.name=Golden Imperial
 item.infinitySword.name=Infinity Blade
 item.silverCoin.name=Silver Imperial
-itemGroub.tabInfinityRising=Infinity Rising Custom
+itemGroup.tabInfinityRising=Infinity Rising Custom
+tile.iridiumOre.name=Iridium Ore
