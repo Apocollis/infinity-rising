@@ -1,18 +1,17 @@
 package com.github.apocollis.infinityrising.blocks;
 
 import com.github.apocollis.infinityrising.help.Reference;
-
+import com.github.apocollis.infinityrising.tabs.ModTabs;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
-public class BlockInfinityOre extends Block
+public class BlockIridiumOre extends Block
 {
-	public BlockInfinityOre()
+	public BlockIridiumOre()
 	{
 		super(Material.iron);
-		setBlockName("infinityOre");
+		setBlockName("iridiumOre");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
-		setCreativeTab(CreativeTabs.tabBlock);
+		setCreativeTab(ModTabs.tabInfinityRising);
 	}
 }

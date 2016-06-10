@@ -1,3 +1,6 @@
 item.boneIngot.name=Bone Ingot
 item.golenCoin.name=Golden Imperial
-tile.infinityOre.name=§4I§6n§ef§2i§1n§5i§4t§6y §eO§2r§1e§r
+tile.infinityOre.name=ï¿½4Iï¿½6nï¿½efï¿½2iï¿½1nï¿½5iï¿½4tï¿½6y ï¿½eOï¿½2rï¿½1eï¿½r
+item.infinitySword.name=Infinity Blade
+item.silverCoin.name=Silver Imperial
+itemGroub.tabInfinityRising=Infinity Rising Custom
