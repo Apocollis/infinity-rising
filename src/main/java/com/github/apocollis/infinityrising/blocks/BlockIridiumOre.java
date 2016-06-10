@@ -13,6 +13,10 @@ public class BlockIridiumOre extends Block
 		setBlockName("iridiumOre");
 		setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
 		setCreativeTab(ModTabs.tabInfinityRising);
-		setLightLevel(0.2F);
+		setLightLevel(0.35F);
+		setHarvestLevel("pickaxe", 3);
+		setHardness(3.0F);
+		setResistance(10.0F);
+		setStepSound(soundTypeStone);
 	}
 }
