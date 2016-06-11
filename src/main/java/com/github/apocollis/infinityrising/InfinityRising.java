@@ -3,6 +3,7 @@ package com.github.apocollis.infinityrising;
 import com.github.apocollis.infinityrising.crafting.ModRecipes;
 import com.github.apocollis.infinityrising.generation.InfinityRisingWorldGeneration;
 import com.github.apocollis.infinityrising.help.Reference;
+import com.github.apocollis.infinityrising.init.ModArmory;
 import com.github.apocollis.infinityrising.init.ModBlocks;
 import com.github.apocollis.infinityrising.init.ModItems;
 import cpw.mods.fml.common.Mod;
@@ -19,6 +20,7 @@ public class InfinityRising
     {
 		ModItems.init();
 		ModBlocks.init();
+		ModArmory.init();
 		GameRegistry.registerWorldGenerator(this.eventWorldGen, 0);
     }
 	

@@ -4,3 +4,7 @@ item.infinitySword.name=Infinity Blade
 item.silverCoin.name=Silver Imperial
 itemGroup.tabInfinityRising=Infinity Rising Custom
 tile.iridiumOre.name=Iridium Ore
+item.iridiumIngot.name=Iridium Ingot
+item.infiniumIngot.name=Infinium Ingot
+item.iridiumSword.name=Iridium Sword
+item.iridiumPick.name=Iridium Pick
