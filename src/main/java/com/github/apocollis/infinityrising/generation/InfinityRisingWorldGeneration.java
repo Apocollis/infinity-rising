@@ -1,9 +1,7 @@
 package com.github.apocollis.infinityrising.generation;
 
 import java.util.Random;
-
 import com.github.apocollis.infinityrising.init.ModBlocks;
-
 import cpw.mods.fml.common.IWorldGenerator;
 import net.minecraft.block.Block;
 import net.minecraft.world.World;

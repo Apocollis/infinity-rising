@@ -2,6 +2,7 @@ package com.github.apocollis.infinityrising;
 
 import com.github.apocollis.infinityrising.crafting.ModRecipes;
 import com.github.apocollis.infinityrising.generation.InfinityRisingWorldGeneration;
+import com.github.apocollis.infinityrising.handlers.MobDropsHandler;
 import com.github.apocollis.infinityrising.help.Reference;
 import com.github.apocollis.infinityrising.init.ModArmory;
 import com.github.apocollis.infinityrising.init.ModBlocks;
@@ -11,6 +12,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.MinecraftForge;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class InfinityRising 
@@ -33,7 +35,7 @@ public class InfinityRising
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event)
     {
-
+    	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
     }
     
 	InfinityRisingWorldGeneration eventWorldGen = new InfinityRisingWorldGeneration();
