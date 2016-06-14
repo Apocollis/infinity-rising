@@ -10,9 +10,9 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class ModArmory 
 {
-	static Item.ToolMaterial IRIDIUM = EnumHelper.addToolMaterial("IRIDIUM", 5, 4096, 2.0F, 11.0F, 14);
-	static Item.ToolMaterial INFINIUM = EnumHelper.addToolMaterial("INFINIUM", 10, 9192, 8.0F, 71.0F, 35);
-	static Item.ToolMaterial BONE = EnumHelper.addToolMaterial("BONE", 2, 128, 4.0F, 2.0F, 5);
+	static Item.ToolMaterial IRIDIUM = EnumHelper.addToolMaterial("IRIDIUM", 5, 4096, 12.0F, 11.0F, 22);
+	static Item.ToolMaterial INFINIUM = EnumHelper.addToolMaterial("INFINIUM", 10, 9192, 20.0F, 71.0F, 35);
+	static Item.ToolMaterial BONE = EnumHelper.addToolMaterial("BONE", 2, 131, 5.0F, 2.0F, 16);
 	
 	public static Item infinitySword = new ItemInfinityRisingSword(INFINIUM).setUnlocalizedName("infinitySword");
 	public static Item iridiumSword = new ItemInfinityRisingSword(IRIDIUM).setUnlocalizedName("iridiumSword");
@@ -31,5 +31,9 @@ public class ModArmory
 		RegisterHelper.registerItem(iridiumPick);
 		RegisterHelper.registerItem(iridiumAxe);
 		RegisterHelper.registerItem(iridiumShovel);
+		RegisterHelper.registerItem(boneSword);
+		RegisterHelper.registerItem(bonePick);
+		RegisterHelper.registerItem(boneAxe);
+		RegisterHelper.registerItem(boneShovel);
 	}
 }

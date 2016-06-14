@@ -15,8 +15,8 @@ public class BlockIridiumOre extends Block
 		setCreativeTab(ModTabs.tabInfinityRising);
 		setLightLevel(0.35F);
 		setHarvestLevel("pickaxe", 3);
-		setHardness(3.0F);
-		setResistance(10.0F);
+		setHardness(50.0F);
+		setResistance(1000.0F);
 		setStepSound(soundTypeStone);
 	}
 }
