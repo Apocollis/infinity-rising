@@ -8,16 +8,27 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 
 public class MobDropsHandler 
-{
+{	
 	@SubscribeEvent
-	public void onMobDrops(Random random, LivingDropsEvent event)
+	public void onMobDrops(LivingDropsEvent event)
 	{
-		if(random.nextInt(100)<10)
+		Random rand = new Random();
+		int DropChance = rand.nextInt(100);
+		if(DropChance<10)
 		{
-			ItemStack stack = new ItemStack(ModItems.goldenCoin);
-			EntityItem drop = new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, stack);
-				
-			event.drops.add(drop);
+			if (DropChance<1)
+			{
+				ItemStack stack = new ItemStack(ModItems.goldenCoin);
+				EntityItem drop = new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, stack);
+					
+				event.drops.add(drop);
+			}else
+			{
+				ItemStack stack = new ItemStack(ModItems.silverCoin);
+				EntityItem drop = new EntityItem(event.entity.worldObj, event.entity.posX, event.entity.posY, event.entity.posZ, stack);
+					
+				event.drops.add(drop);
+			}
 		}
 	}
 }

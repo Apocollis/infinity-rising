@@ -1,5 +1,7 @@
 package com.github.apocollis.infinityrising;
 
+//Custom Mod for Infinity Rising modpack
+
 import com.github.apocollis.infinityrising.crafting.ModRecipes;
 import com.github.apocollis.infinityrising.generation.InfinityRisingWorldGeneration;
 import com.github.apocollis.infinityrising.handlers.MobDropsHandler;
@@ -21,8 +23,8 @@ public class InfinityRising
     public void preInit(FMLPreInitializationEvent event)
     {
 		ModItems.init();
-		ModBlocks.init();
 		ModArmory.init();
+		ModBlocks.init();
 		GameRegistry.registerWorldGenerator(this.eventWorldGen, 0);
     }
 	

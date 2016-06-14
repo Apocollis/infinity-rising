@@ -15,9 +15,9 @@ public class ModItems
 	
 	public static void init()
 	{
-		RegisterHelper.registerItem(boneIngot);
 		RegisterHelper.registerItem(goldenCoin);
 		RegisterHelper.registerItem(silverCoin);
+		RegisterHelper.registerItem(boneIngot);
 		RegisterHelper.registerItem(iridiumIngot);
 		RegisterHelper.registerItem(infiniumIngot);
 	}

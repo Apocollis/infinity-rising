@@ -1,10 +1,12 @@
-item.boneIngot.name=Bone Ingot
-item.goldenCoin.name=Golden Imperial
-item.infinitySword.name=Infinity Blade
-item.silverCoin.name=Silver Imperial
 itemGroup.tabInfinityRising=Infinity Rising Custom
+item.infinitySword.name=Infinity Blade
+item.infiniumIngot.name=Infinium Ingot
+item.goldenCoin.name=Golden Imperial
+item.silverCoin.name=Silver Imperial
+item.boneIngot.name=Bone Ingot
 tile.iridiumOre.name=Iridium Ore
 item.iridiumIngot.name=Iridium Ingot
-item.infiniumIngot.name=Infinium Ingot
 item.iridiumSword.name=Iridium Sword
 item.iridiumPick.name=Iridium Pick
+item.iridiumAxe.name=Iridium Axe
+item.iridiumShovel.name=Iridium Shovel
