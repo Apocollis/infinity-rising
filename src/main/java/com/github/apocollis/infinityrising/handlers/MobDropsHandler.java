@@ -15,17 +15,22 @@ public class MobDropsHandler
 	{
 		//Generate a random number 0-99. A Coin will drop for the rates set below
 		int DropGoldCoin = 1;
-		int DropSilverCoin = 10;
+		int DropSilverCoin = 15;
 		Random rand = new Random();
 		int DropChance = rand.nextInt(100);
+		
+		//Reduces the chance of getting a coin if the damage did not come from a player
+		if (!(event.source.damageType == "player"))
+		{
+			DropChance = DropChance + 10;
+		}
 		
 		//Reduces the chance of getting a coin if the mob is passive
 		if (!(event.entity instanceof IMob))
 		{
 			DropChance = DropChance + 5;
-			//System.out.println("Passive Mob Penalty");
 		} 
-		//System.out.println("Drop Chance:" + DropChance);
+		
 		if(DropChance<DropSilverCoin)
 		{
 			if (DropChance<DropGoldCoin)
