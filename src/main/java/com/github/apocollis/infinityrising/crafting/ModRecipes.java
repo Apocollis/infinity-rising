@@ -12,8 +12,12 @@ public class ModRecipes
 {
 	public static void init()
 	{
+		//Recipes for Vanilla Items
+		GameRegistry.addShapelessRecipe(new ItemStack(Items.flint), Blocks.gravel);		
+		GameRegistry.addShapedRecipe(new ItemStack(Items.saddle), new Object[] {"AAA", "ABA", " C ", 'A', Items.leather, 'B', Items.string, 'C', Items.iron_ingot});
+		
+		//Recipes for Mod Items
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.boneIngot), new Object[] {" A ", "AAA", " A ", 'A', Items.bone});
-		GameRegistry.addShapelessRecipe(new ItemStack(Items.flint), Blocks.gravel);
 		GameRegistry.addSmelting(ModBlocks.iridiumOre, new ItemStack(ModItems.iridiumIngot),1.2F);
 		GameRegistry.addRecipe(new ItemStack (ModArmory.iridiumPick), new Object[] {"AAA", " B ", " B ", 'A', ModItems.iridiumIngot, 'B', Blocks.obsidian});
 		GameRegistry.addRecipe(new ItemStack (ModArmory.iridiumAxe), new Object[] {" AA", " BA", " B ", 'A', ModItems.iridiumIngot, 'B', Blocks.obsidian});
